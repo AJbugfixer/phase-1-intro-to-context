@@ -18,7 +18,7 @@ function createTimeInEvent(recordArr, dateHour) {
 
     const timeInObject = {
         type: 'TimeIn',
-        hour: hour,
+        hour: +hour,
         date: date,
     }
     recordArr.timeInEvents.push(timeInObject)
@@ -30,7 +30,7 @@ function createTimeOutEvent(recordArr, dateHour) {
 
     const timeOutObject = {
         type: 'TimeOut',
-        hour: hour,
+        hour: +hour,
         date: date,
     }
     recordArr.timeOutEvents.push(timeOutObject)
